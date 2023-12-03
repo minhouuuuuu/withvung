@@ -10,7 +10,7 @@ export default function Home() {
         withvung&apos;s portfolio :3 <br />
         Stay tuned! Working in progress... with&nbsp;
           <Link href="https://nguyen-minh.dev" target="_blank" className="underline">
-            @terminator
+            @terminhator
           </Link>
       </h1>
 
