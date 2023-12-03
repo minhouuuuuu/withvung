@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center h-screen flex-col">
+    <main className="flex items-center justify-center h-screen flex-col px-4">
       <h1 className='text-xl font-semibold text-center'>
         withvung&apos;s portfolio :3 <br />
         Stay tuned! Working in progress... with&nbsp;
@@ -14,8 +14,8 @@ export default function Home() {
           </Link>
       </h1>
 
-      <p>But don&apos;t worry, you can still check vung&apos;s other social network here:</p>
-      <div className="flex space-x-3 pt-4">
+      <p className="text-center">But don&apos;t worry, you can still check vung&apos;s other social network here:</p>
+      <div className="flex space-x-3 pt-7">
         <Link href="https://www.instagram.com/withvung/" target="_blank">
           <Button>
             <Instagram size={24} />
