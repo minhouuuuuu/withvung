@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, FacebookIcon, YoutubeIcon} from "lucide-react";
+import { Instagram, FacebookIcon, YoutubeIcon, PartyPopper} from "lucide-react";
 import Link from "next/link";
+import { Announce } from "@/components/announce";
 
 
 export default function Home() {
@@ -8,14 +9,14 @@ export default function Home() {
     <main className="flex items-center justify-center h-screen flex-col px-4">
       <h1 className='text-xl font-semibold text-center'>
         withvung&apos;s portfolio :3 <br />
-        Stay tuned! Working in progress... with&nbsp;
-          <Link href="https://nguyen-minh.dev" target="_blank" className="underline">
-            @terminhator
-          </Link>
+        Working in progress... with&nbsp;
+        <Link href="https://nguyen-minh.dev" target="_blank" className="underline">
+          @terminhator
+        </Link>
       </h1>
 
-      <p className="text-center">But don&apos;t worry, you can still check vung&apos;s other social network here:</p>
-      <div className="flex space-x-3 pt-7">
+      <p className="text-center px-8">But don&apos;t worry, you can still check vung&apos;s other social network here:</p>
+      <div className="flex space-x-3 py-7">
         <Link href="https://www.instagram.com/withvung/" target="_blank">
           <Button>
             <Instagram size={24} />
@@ -32,6 +33,9 @@ export default function Home() {
           </Button>
         </Link>
       </div>
+
+      <p className="pb-7 px-8 text-center">...or you can check our present for the waiting: </p>
+      <Announce />
     </main>
   )
 }
